@@ -138,6 +138,8 @@ static const Key keys[] = {
 	{ MODKEY,                    XKB_KEY_h,          setmfact,       {.f = -0.05f} },
 	{ MODKEY,                    XKB_KEY_l,          setmfact,       {.f = +0.05f} },
 	{ MODKEY,                    XKB_KEY_Return,     zoom,           {0} },
+	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_J,          movestack,      {.i = +1} },
+	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_K,          movestack,      {.i = -1} },
 	// { MODKEY,                    XKB_KEY_Tab,        view,           {0} },
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_Tab,        shiftview,      { .i = -1 } },
 	{ MODKEY,                    XKB_KEY_Tab,        shiftview,      { .i = 1 } },
