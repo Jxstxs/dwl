@@ -38,7 +38,7 @@ cursor-shape-v1-protocol.h:
 config.h:
 	cp config.def.h $@
 clean:
-	rm -f dwl *.o *-protocol.h
+	rm -f dwl *.o *-protocol.h config.h
 
 dist: clean
 	mkdir -p dwl-$(VERSION)
