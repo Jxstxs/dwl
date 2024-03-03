@@ -23,7 +23,7 @@ static int log_level = WLR_ERROR;
 /* Autostart */
 static const char *const autostart[] = {
     "swww", "init", NULL,
-    "way-display", NULL,
+    "way-displays", NULL,
     NULL
 };
 
@@ -127,7 +127,7 @@ static const enum libinput_config_tap_button_map button_map = LIBINPUT_CONFIG_TA
 /* commands */
 static const char *termcmd[] = { "alacritty", NULL };
 static const char *menucmd[] = { "bemenu-run", NULL };
-static const char *firefoxcmd[] = { "firefox &", NULL };
+static const char *firefoxcmd[] = { "firefox", NULL };
 
 #include "shiftview.c"
 
