@@ -1,4 +1,14 @@
-# dwl - dwm for Wayland
+# My Patched dwl - dwm for Wayland
+
+## Patches
+
+- autostart
+- cfact
+- cyclelayouts
+- movestack
+- pertag
+- shiftview
+- vanitygaps
 
 Join us on our IRC channel: [#dwl on Libera Chat]  
 Or on our [Discord server].
@@ -177,5 +187,4 @@ inspiration, and to the various contributors to the project, including:
 [dinit]: https://davmac.org/projects/dinit/
 [`systemd --user`]: https://wiki.archlinux.org/title/Systemd/User
 [wiki]: https://codeberg.org/dwl/dwl/wiki/Home#compatible-status-bars
-[list of useful resources on our wiki]:
-    https://codeberg.org/dwl/dwl/wiki/Home#migrating-from-x
+[list of useful resources on our wiki]: https://codeberg.org/dwl/dwl/wiki/Home#migrating-from-x
