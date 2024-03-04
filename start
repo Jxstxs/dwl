@@ -3,5 +3,8 @@
 XKB_DEFAULT_LAYOUT="de" \
 WLR_NO_HARDWARE_CURSORS=1 \
 MOZ_ENABLE_WAYLAND=1 \
-    ./dwl > dwl.log
+SWWW_TRANSITION="grow" \
+SWWW_TRANSITION_FPS=120 \
+SWWW_TRANSITION_POS="bottom-left" \
+    dwl > ~/.repos/personal/dwl/dwl.log
 
