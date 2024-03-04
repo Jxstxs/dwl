@@ -14,6 +14,13 @@ static const float urgentcolor[]           = COLOR(0xff0000ff);
 /* To conform the xdg-protocol, set the alpha to zero to restore the old behavior */
 static const float fullscreen_bg[]         = {0.1f, 0.1f, 0.1f, 1.0f}; /* You can also use glsl colors */
 
+static const int smartgaps                 = 0;  /* 1 means no outer gap when there is only one window */
+static const int monoclegaps               = 1;  /* 1 means outer gaps in monocle layout */
+static const unsigned int gappih           = 15; /* horiz inner gap between windows */
+static const unsigned int gappiv           = 15; /* vert inner gap between windows */
+static const unsigned int gappoh           = 15; /* horiz outer gap between windows and screen edge */
+static const unsigned int gappov           = 15; /* vert outer gap between windows and screen edge */
+
 /* tagging - TAGCOUNT must be no greater than 31 */
 #define TAGCOUNT (9)
 
@@ -157,6 +164,8 @@ static const Key keys[] = {
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_I,          incnmaster,     {.i = -1} },
 
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_Return,     zoom,           {0} },
+
+	{ MODKEY,                    XKB_KEY_g,          togglegaps,     {0} },
 
 	{ MODKEY,                    XKB_KEY_Tab,        shiftview,      { .i = 1 } },
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_Tab,        shiftview,      { .i = -1 } },
