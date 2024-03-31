@@ -31,8 +31,9 @@ static int log_level = WLR_ERROR;
 static const char *const autostart[] = {
     "swww", "init", NULL,
     "way-displays", NULL,
-    "pkexec swhkd", NULL,
+    "pkexec", "swhkd", NULL,
     "swhks", NULL,
+    "mako", NULL,
     NULL
 };
 
